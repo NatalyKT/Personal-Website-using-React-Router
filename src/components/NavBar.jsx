@@ -1,3 +1,6 @@
+//The NavBar component contains several NavTab components
+//and provides them with a couple of properties that will
+//define where they are linked to and how they are labeled
 import React from "react";
 import NavTab from "./NavTab.jsx";
 

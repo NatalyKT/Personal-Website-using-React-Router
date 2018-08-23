@@ -10,6 +10,14 @@ const App = () => {
     <BrowserRouter>
       <div>
         <NavBar />
+        <Switch>
+          <Redirect exact path="/" to="/about" />
+          <Route path="/about" component={About} />
+          <Route path="/resume" component={Resume} />
+          <Route path="/projects" component={null} />
+          <Route path="/contact" component={null} />
+          <Route component={Error} />
+        </Switch>
       </div>
     </BrowserRouter>
   );
